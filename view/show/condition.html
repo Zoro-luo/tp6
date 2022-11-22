@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {switch $number}
+        {case 1}1{/case}
+        {case 5}5{/case}
+        {case $id}10{/case}
+        {default/} 不存在
+    {/switch}
+
+    {if $number >= 10}大于 10{/if}
+
+    {if $number > 10}
+    大于 10
+    {else/}
+    小于 10
+    {/if}
+</body>
+</html>
