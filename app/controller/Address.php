@@ -6,7 +6,7 @@ class Address
 {
     public function index()
     {
-
+        return 'index: ';
     }
 
     public function details($id)
