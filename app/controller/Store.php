@@ -28,6 +28,6 @@ class Store
 
     public function cookie()
     {
-        Cookie::set('user','luoquan444',3600);
+        Cookie::set('user','luoquan555',3600);
     }
 }
