@@ -30,4 +30,31 @@ class Store
     {
         Cookie::set('user','luoquan555',3600);
     }
+
+    public function redis(Request $request)
+    {
+//        Cache::set('user','luo',36000);
+//        Cache::set('val',11);
+//        dump( Cache::has('user') );
+//        dump( Cache::get('user') );
+//        dump( Cache::inc('val',5) );
+//        dump( Cache::delete('val') );
+//        dump( Cache::has('val') );
+        //Cache::remember('start_time',time());
+//        Cache::remember('start_time2',function (Request $request){});
+
+//        dump( Cache::get('start_time2') );
+//        Cache::clear();
+//        dump( Cache::get('start_time2') );
+
+//        Cache::tag('tag')->set('user','zhangsan');
+//        Cache::tag('tag')->set('age',22);
+//        dump(Cache::get('age'));
+
+        cache('user','zaza1');
+        dump( cache('user') );
+        cache('user',null);
+        dump( cache('user') );
+    }
+
 }
