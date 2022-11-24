@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "830df1e23ea94fc8f4e802d53e0ebe65",
+    "content-hash": "fb67ac7b81067734600ba77825b6e104",
     "packages": [
         {
             "name": "league/flysystem",
@@ -578,6 +578,65 @@
             "time": "2022-10-26T03:48:53+00:00"
         },
         {
+            "name": "topthink/think-captcha",
+            "version": "v3.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/think-captcha.git",
+                "reference": "52fba122c953995bec3013c635025172491ae299"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/think-captcha/zipball/52fba122c953995bec3013c635025172491ae299",
+                "reference": "52fba122c953995bec3013c635025172491ae299",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "topthink/framework": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "think": {
+                    "services": [
+                        "think\\captcha\\CaptchaService"
+                    ],
+                    "config": {
+                        "captcha": "src/config.php"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "think\\captcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "yunwuxin",
+                    "email": "448901948@qq.com"
+                }
+            ],
+            "description": "captcha package for thinkphp",
+            "support": {
+                "issues": "https://github.com/top-think/think-captcha/issues",
+                "source": "https://github.com/top-think/think-captcha/tree/v3.0.8"
+            },
+            "time": "2022-10-26T07:59:42+00:00"
+        },
+        {
             "name": "topthink/think-filesystem",
             "version": "v1.0.1",
             "source": {
@@ -682,6 +741,60 @@
                 "source": "https://github.com/top-think/think-helper/tree/v3.1.6"
             },
             "time": "2021-12-15T04:27:55+00:00"
+        },
+        {
+            "name": "topthink/think-multi-app",
+            "version": "v1.0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/think-multi-app.git",
+                "reference": "387e0dac059c20f92cac5da41a871e10829c1c97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/think-multi-app/zipball/387e0dac059c20f92cac5da41a871e10829c1c97",
+                "reference": "387e0dac059c20f92cac5da41a871e10829c1c97",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.1.0",
+                "topthink/framework": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "think": {
+                    "services": [
+                        "think\\app\\Service"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "think\\app\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "liu21st",
+                    "email": "liu21st@gmail.com"
+                }
+            ],
+            "description": "thinkphp6 multi app support",
+            "support": {
+                "issues": "https://github.com/top-think/think-multi-app/issues",
+                "source": "https://github.com/top-think/think-multi-app/tree/v1.0.15"
+            },
+            "time": "2022-10-26T08:03:06+00:00"
         },
         {
             "name": "topthink/think-orm",

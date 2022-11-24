@@ -13,5 +13,6 @@ return [
     ],
 
     'subscribe' => [
+        'UserSub'   =>  \app\subscribe\UserSub::class,
     ],
 ];

@@ -4,6 +4,7 @@ namespace app\controller;
 
 use think\facade\Cache;
 use think\facade\Cookie;
+use think\facade\Event;
 use think\facade\Request;
 use think\facade\Session;
 
@@ -55,6 +56,18 @@ class Store
         dump( cache('user') );
         cache('user',null);
         dump( cache('user') );
+    }
+
+    public function login()
+    {
+        echo '登陆成功';
+        event('UserLogin');
+    }
+
+    public function logout()
+    {
+        echo '退出成功';
+        Event::trigger('UserLogout');
     }
 
 }
